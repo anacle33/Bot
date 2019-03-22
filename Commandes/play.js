@@ -1,6 +1,6 @@
 const ytdl = require('ytdl-core');
 
-module.exporte.run = async (bot, message, args) => {
+module.exports.run = async (bot, message, args) => {
     // Vérification
     if (!message.member.voiceChannel) return message.channel.send("Connectez vous à un salon vocal ! ")
     if (message.guild.me.voiceChannel) return message.channel.send("Le bot est déjà connecté à un salon")
@@ -18,6 +18,6 @@ module.exporte.run = async (bot, message, args) => {
     message.channel.send(`Musique ajoutée : ${info.title}`);
 };
 
-module.exporte.help = {
+module.exports.help = {
     name: 'play'
 };
