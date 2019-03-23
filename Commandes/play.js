@@ -35,4 +35,4 @@ exports.run = async (client, message, args, ops) => {
     message.channel.send(`Now playing: ${info.title}`);
 
     // Now, we can test it
-}
+};
