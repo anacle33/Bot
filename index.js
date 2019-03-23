@@ -18,7 +18,7 @@ fs.readdir("./Commandes/", (error, f) => {
         let commande = require(`./Commandes/${f}`);
         console.log(`${f} commande chargée !`);
 
-    client.commands.set(commande.help, commande);
+    client.commands.set(commande.help, commande.name);
     });
 });
 
